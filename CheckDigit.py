@@ -18,9 +18,11 @@ def calc(length, char):
     return evens+odds
     
 def check(total):
-    if total/10 is not 0:
+    if total%10 is not 0:
         z = total%10
         digit = 10-z
+    else:
+        digit = 0
     return digit
 
 ##########   
